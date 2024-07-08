@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:weightSum="30">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Add Parking"
+            android:textColor="@color/color2"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/shape_button"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp" />
+
+      <!--  <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/Back"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+   -->
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="28"
+        android:weightSum="26"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/color2"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:text="Title"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/Title"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/shape_edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/color2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="Title"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:textColorHint="@color/color4"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/color2"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:text="Number Of Parking"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/NumOfParking"
+            android:inputType="number"
+            android:background="@drawable/shape_edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/color2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="Number Of Parking"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:textColorHint="@color/color4"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/color2"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:text="Price per hour"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/Price"
+            android:inputType="number"
+            android:background="@drawable/shape_edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/color2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="Price per hour"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:textColorHint="@color/color4"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/Map"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/white"
+            android:padding="7dp"
+            android:background="@drawable/shape_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Pick Location"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="6">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ProfilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image"
+                app:riv_corner_radius="5dp"
+                app:riv_mutate_background="true" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/UploadImage"
+                android:src="@drawable/upload"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                app:riv_mutate_background="true"
+                android:layout_gravity="center"
+                app:riv_oval="true" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/color2"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:text="Description"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:id="@+id/About"
+            android:hint="Description..."
+            android:background="@drawable/shape_edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:gravity="top"
+            android:textColor="@color/color2"
+            android:padding="15dp"
+            android:textColorHint="@color/color4"
+            android:layout_marginTop="20dp"/>
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/white"
+            android:padding="7dp"
+            android:background="@drawable/shape_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Add"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

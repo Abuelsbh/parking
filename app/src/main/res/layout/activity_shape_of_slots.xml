@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShapeOfSlots"
+    android:orientation="vertical"
+    android:padding="7dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Shape Of Slots"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView"
+        android:layout_below="@+id/txt"
+        android:layout_above="@+id/ReserveNow"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="4"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/ReserveNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ReserveLater"
+        android:textColor="@color/white"
+        android:padding="7dp"
+        android:background="@drawable/shape_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Reserve Now"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/ReserveLater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="7dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Reserve Later"
+        android:textSize="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/home" android:title="Home" android:icon="@drawable/home"/>
+    <item android:id="@+id/NearBy" android:title="Near by" android:icon="@drawable/ic_baseline_near_me_24"/>
+    <item android:id="@+id/add" android:title="Add Parking" android:icon="@drawable/plus_square"/>
+    <item android:id="@+id/profile" android:title="My Profile" android:icon="@drawable/user"/>
+    <group android:id="@+id/lkl">
+        <item android:id="@+id/logout" android:title="Log out" android:icon="@drawable/ic_baseline_logout_24"/>
+    </group>
+
+</menu>
